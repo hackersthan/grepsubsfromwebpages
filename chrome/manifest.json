@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "grepsubsfromwebpages",
+  "version": "1.0",
+  "description": "Extracts subdomains of a specified domain from visited pages.",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting",
+    "downloads",
+    "webNavigation"
+  ],
+  "host_permissions": ["<all_urls>"],
+  "background": { "service_worker": "background.js" },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "32": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  }
+}
