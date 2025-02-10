@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>grepsubsfromwebpages</title>
+    <script src="popup.js" defer></script>
+</head>
+<body>
+
+    <style>
+        body{
+            width: 300px;
+        }
+
+        ul{
+            list-style-type: square;
+            list-style-position: outside;
+        }
+    </style>
+
+    <h3>grepsubsfromwebpages</h3>
+    <input type="text" id="domainInput" placeholder="example.com">
+    <button id="toggleButton">Enable</button></br>
+    <br>
+    <button id="saveButton">Save</button>
+    <button id="copyButton">Copy</button>
+    <p id="status"></p>
+    <button id="clearButton">Clear</button>
+    <p>Extracted Subdomains (<span id="subdomainCount">0</span>):</p>
+    <ul id="subdomainList"></ul>
+</body>
+</html>
